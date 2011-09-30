@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.5/template-install.dtd">
+<install version="1.5" type="template">
+	<name>sample1</name>
+	<creationDate>2011-10-27</creationDate>
+	<author>Dhanpal</author>
+	<authorEmail>dhanapal.hideaz@gmail.com</authorEmail>
+	<authorUrl>http://www.hideaz.com</authorUrl>
+	<copyright>Hideaz 2011</copyright>
+	<license>GNU/GPL</license>
+	<version>1.5</version>
+	<description>My First Joomla Template</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>favicon.ico</filename>
+		<filename>params.ini</filename>
+		<filename>css/template.css</filename>
+		<filename>css/blue.css</filename>
+		<filename>css/blue_bg.css</filename>
+		<!--file>images/menu_curren_link_bg.gif</file>
+		<file>images/menu_link_bg.gif</file>
+		<file>images/footer_l_bg.jpg</file>
+		<file>images/footer_m_bg.jpg</file>
+		<file>images/footer_r_bg.jpg</file>
+		<file>images/header_l_bg.jpg</file>
+		<file>images/header_lr_bg.jpg</file>
+		<file>images/left_bg.jpg</file>
+		<file>images/header_r_bg.jpg</file>
+		<file>images/leftcolumn_bg.jpg</file>
+		<file>images/header_top_left.jpg</file>
+		<file>images/header_top_middle.jpg</file>
+		<file>images/header_top_middle_shadow_bg.jpg</file>
+		<file>images/header_top_right.jpg</file>
+		<file>images/left_shadow.jpg</file>
+		<file>images/logo.jpg</file>
+		<file>images/menu_t.jpg</file>
+		<file>images/right_shadow.jpg</file>
+		<file>images/top_menu_l_bg.jpg</file>
+		<file>images/top_menu_m_bg.jpg</file>
+		<file>images/top_menu_r_bg.jpg</file>
+		<file>images/top_menu_separator.jpg</file>
+		<file>images/arrow.png</file>
+		<file>images/face.png</file>
+		<file>images/google.png</file>
+		<file>images/myspace-icon.png</file>
+		<file>images/tweet.png</file-->
+		
+	</files>
+	<positions>
+		<position>breadcrumb</position>
+		<position>left</position>
+		<position>right</position>
+		<position>top</position>
+		<position>user1</position>
+		<position>user2</position>
+		<position>user3</position>
+		<position>user4</position>
+		<position>footer</position>
+	</positions>
+	
+	<param name="anotherOption" type="list" default="option1" label="Another Option" description="Another parameter option for your template">
+		<option value="option1">Option 1</option>
+		<option value="option2">Option 2</option>
+		</param>
+		
+	<params>
+		<param name="colorVariation" type="list" default="white" label="Color Variation" description="Color variation to use">
+			<option value="blue">Blue</option>
+			<option value="pink">Pink</option>
+			<option value="red">Red</option>
+			<option value="green">Green</option>
+			<option value="orange">Orange</option>
+			<option value="black">Black</option>
+			<option value="white">White</option>
+		</param>
+		
+		
+		<param name="backgroundVariation" type="list" default="blue" label="Background Variation" description="Background color variation to use">
+			<option value="blue">Blue</option>
+			<option value="pink">Pink</option>
+			<option value="red">Red</option>
+			<option value="green">Green</option>
+			<option value="orange">Orange</option>
+			<option value="black">Black</option>
+			<option value="white">White</option>
+		</param>
+
+		
+		
+		<param name="widthStyle" type="list" default="fmax" label="Template Width" description="Width style of the template">
+			<option value="fmax">Fluid with maximum</option>
+			<option value="medium">Medium</option>
+			<option value="small">Small</option>
+			<option value="fluid">Fluid</option>
+		</param>
+	</params>
+</install>
