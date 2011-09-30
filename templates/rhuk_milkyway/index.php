@@ -61,18 +61,21 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
                 <jdoc:include type="modules" name="user3" />
             </DIV>
             <DIV CLASS="span-24 last" ID="mygallarygap">&nbsp;</DIV>
-            <DIV CLASS="span-17 spacegallery" ID="myGallery"> 
+            <DIV CLASS="span-24 last">
+	            <jdoc:include type="component" />
+            </DIV>
+            <!--DIV CLASS="span-17 spacegallery" ID="myGallery"> 
                 <!--IMG ALT="" SRC="images/gallary/home5.png" /> 
                 <IMG ALT="" SRC="images/gallary/home4.png" /> 
                 <IMG ALT="" SRC="images/gallary/home3.png" /> 
-                <IMG ALT="" SRC="<?php echo $this->baseurl ?>/templates/rhuk_milkyway/images/gallary/home2.png" /--> 
-                <!--IMG ALT="" SRC="<?php echo $this->baseurl ?>/templates/rhuk_milkyway/images/gallary/home1.png" /--> 
+                <IMG ALT="" SRC="<?php// echo $this->baseurl ?>/templates/rhuk_milkyway/images/gallary/home2.png" /--> 
+                <!--IMG ALT="" SRC="<?php// echo $this->baseurl ?>/templates/rhuk_milkyway/images/gallary/home1.png" /> 
             </DIV>
             <DIV CLASS="span-7 last" id="wrapperright">
             	<div class="span-7 last" id="righttop">
                 &nbsp;
                 </div>
-            </DIV>
+            </DIV-->
         </DIV>
         <!-- gap -->
         <DIV CLASS="span-24 last" STYLE="height:4px;">&nbsp;</DIV>
