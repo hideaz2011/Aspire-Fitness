@@ -501,7 +501,11 @@ ul.menu {
 			width:467px;
 		}
 		
-		.panel h4.title {
+		.panel-new{
+			width:460px;
+		}
+		
+		.panel h4.title, .panel-new  h4.title{
         /*color : #3F7CD9;*/
         color : #3F7CD9;
         font-size : 22px;
@@ -512,7 +516,7 @@ ul.menu {
 		font-weight:bold;
     }
 
-    .panel h3.title {
+    .panel h3.title, .panel-new h3.title {
         color : black;
         font-size : 18px;
         border : 0px solid black;
@@ -541,7 +545,7 @@ ul.menu {
         word-spacing: 4px;
     }
 	
-	.panel p {
+	.panel p, .panel-new p {
         color : black;
         font-size : 14px;
         border : 0px solid black;
