@@ -984,6 +984,23 @@ INSERT INTO `jos_templates_menu` (`template`, `menuid`, `client_id`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `jos_test`
+--
+
+CREATE TABLE IF NOT EXISTS `jos_test` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `jos_test`
+--
+
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `jos_users`
 --
 
