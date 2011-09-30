@@ -493,3 +493,63 @@ ul.menu {
 		#myGallery {
 			border:1px solid red;
 		}
+		
+		
+		/****Com_Services*****/
+				
+		.panel{
+			width:467px;
+		}
+		
+		.panel h4.title {
+        /*color : #3F7CD9;*/
+        color : #3F7CD9;
+        font-size : 22px;
+        border : 0px solid black;
+        margin-top : 1px;
+        margin-bottom : 8px;
+        letter-spacing: 1px;
+		font-weight:bold;
+    }
+
+    .panel h3.title {
+        color : black;
+        font-size : 18px;
+        border : 0px solid black;
+        margin-top : 1px;
+        margin-bottom : 5px;
+        letter-spacing: 1px;
+		font-weight:bold;
+    }
+	.panel1 h3.title {
+        color : black;
+        font-size : 18px;
+        border : 0px solid black;
+        margin-top : 1px;
+        margin-bottom : 5px;
+        letter-spacing: 1px;
+		font-weight:bold;
+    }
+
+    .panel1 p {
+        color : black;
+        font-size : 12px;
+        border : 0px solid black;
+        margin-top : 1px;
+        margin-bottom : 5px;
+        letter-spacing: 1px;
+        word-spacing: 4px;
+    }
+	
+	.panel p {
+        color : black;
+        font-size : 12px;
+        border : 0px solid black;
+        margin-top : 1px;
+        margin-bottom : 5px;
+        letter-spacing: 1px;
+        word-spacing: 4px;
+    }
+	#middlecontent{
+		height:auto;
+	}
