@@ -11,33 +11,37 @@
 
 // no direct access
 defined( '_JEXEC' ) or die( 'Restricted access' );
+$templateDir = $this->baseurl . '/templates/' . $this->template;
+$templateCSSDir = $this->baseurl . '/templates/' . $this->template."/css/";
+$templateJSDir = $this->baseurl . '/templates/' . $this->template."/js/";
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" >
 <head>
+<SCRIPT SRC="<?php echo $templateJSDir; ?>jquery-1.5.2.min.js" TYPE="text/javascript"></SCRIPT>
 <jdoc:include type="head" />
 
-<LINK HREF="<?php echo $this->baseurl ?>/templates/rhuk_milkyway/css/blueprint/screen.css" MEDIA="screen, projection" REL="stylesheet"
+
+<LINK HREF="<?php echo $templateCSSDir ?>blueprint/screen.css" MEDIA="screen, projection" REL="stylesheet"
           TYPE="text/css">
-    <LINK HREF="<?php echo $this->baseurl ?>/templates/rhuk_milkyway/css/blueprint/blueprint-wp.css" MEDIA="screen, projection"
+    <LINK HREF="<?php echo $templateCSSDir ?>blueprint/blueprint-wp.css" MEDIA="screen, projection"
           REL="stylesheet" TYPE="text/css">
-    <LINK HREF="<?php echo $this->baseurl ?>/templates/rhuk_milkyway/css/blueprint/print.css" MEDIA="print" REL="stylesheet"
+    <LINK HREF="<?php echo $templateCSSDir ?>blueprint/print.css" MEDIA="print" REL="stylesheet"
           TYPE="text/css">
-    <LINK HREF="<?php echo $this->baseurl ?>/templates/rhuk_milkyway/css/blueprint/reset.css" MEDIA="screen" REL="stylesheet"
+    <LINK HREF="<?php echo $templateCSSDir ?>blueprint/reset.css" MEDIA="screen" REL="stylesheet"
           TYPE="text/css" />
-<LINK HREF="<?php echo $this->baseurl ?>/templates/rhuk_milkyway/css/blueprint/mycss.css" REL="stylesheet" TYPE="text/css">
-    <LINK HREF="<?php echo $this->baseurl ?>/templates/rhuk_milkyway/css/blueprint/layout.css" MEDIA="screen" REL="stylesheet"
+<LINK HREF="<?php echo $templateCSSDir ?>blueprint/mycss.css" REL="stylesheet" TYPE="text/css">
+    <LINK HREF="<?php echo $templateCSSDir ?>blueprint/layout.css" MEDIA="screen" REL="stylesheet"
           TYPE="text/css" />
-          <LINK HREF="<?php echo $this->baseurl ?>/templates/rhuk_milkyway/css/blueprint/custom.css" MEDIA="screen" REL="stylesheet"
+          <LINK HREF="<?php echo $templateCSSDir ?>blueprint/custom.css" MEDIA="screen" REL="stylesheet"
           TYPE="text/css" />
 
 <!--[if lte IE 6]>
 <link href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/blueprint/css/ie.css" rel="stylesheet" type="text/css" />
 <![endif]-->
 <?php if($this->direction == 'rtl') : ?>
-	<link href="<?php echo $this->baseurl ?>/templates/rhuk_milkyway/css/template_rtl.css" rel="stylesheet" type="text/css" />
+	<link href="<?php echo $templateCSSDir ?>template_rtl.css" rel="stylesheet" type="text/css" />
 <?php endif; ?>
-
 </head>
 <body>
 	<!-- Container Div-->
@@ -47,7 +51,7 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
         <!-- header div -->
         <DIV CLASS="span-24 last headerdiv"> 
         	<DIV CLASS="span-24 prepend-1 last" ID="logodiv"> 
-                <IMG ALT="Aspire Logo" SRC="<?php echo $this->baseurl ?>/templates/rhuk_milkyway/images/logo.jpg"/> 
+                <IMG ALT="Aspire Logo" SRC="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/images/logo.jpg"/> 
             </DIV>
             <DIV CLASS="span-24 prepend-1 last logotext"
                  STYLE="border:0px solid #7A7979;text-align:left;"> Fun and affordable way to look better, feel better 
