@@ -553,3 +553,44 @@ ul.menu {
 	#middlecontent{
 		height:auto;
 	}
+	
+	/*com_contacts*/
+	
+	.adminform{
+		/*border:2px solid #333;*/
+	}
+	legend{
+		
+		color:#33C;
+		font-size:24px;
+		margin-bottom:20px;
+		margin-left:160px;
+	}
+	
+	.alignment{
+		color:balck;
+		text-align:right;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:14px;
+		margin-top:10px;
+			
+	}
+	input[type="text"]{
+		width:350px;
+		height:30px;
+		margin-top:0px;
+		
+	}
+	
+	input[type="submit"]{
+		text-align:center;
+		font-size:14px;
+		margin-top:10px;
+			
+	}
+	#source{
+		width:100px;
+		height:20px;
+		vertical-align:middle;
+		border:2px solid #BBBBBB;
+	}
