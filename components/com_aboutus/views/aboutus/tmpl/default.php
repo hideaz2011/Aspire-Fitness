@@ -7,7 +7,7 @@ $templateDir = JURI::base() . 'templates/' . $app->getTemplate();
 <IMG ALT="" SRC="<?php echo $templateDir; ?>/images/aboutus.jpg" />
 </div>
 
-<div class="span-12  panel last" style="margin-left:20px;">
+<div class="span-12  panel-new last" style="margin-left:20px;">
 	<h4 class="title">About us</h4>
 		<p class="desc-para">Aspire fitness is boon for every individual whether he or she is in to Fitness or not. We are passionate about fitness and desire to help people live the fitness lifestyle, we are working hard and fast towards our mission of helping people Change their lives through fitness. We recognize that every person has their own set of goals and their own unique perspective of what a fitness centre means to them.</p>
 

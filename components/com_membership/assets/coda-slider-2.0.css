@@ -1,0 +1,99 @@
+/*
+	jQuery Coda-Slider v2.0 - http://www.ndoherty.biz/coda-slider
+	Copyright (c) 2009 Niall Doherty
+	This plugin available for use in all personal or commercial projects under both MIT and GPL licenses.
+*/
+
+/* Insignificant stuff, for demo purposes */
+
+	body { padding: 20px }
+	.panel h2.title { margin-bottom: 10px; font-size:20px; font-family : Calibri, Verdana, Ariel, sans-serif; height:25px; }
+	.panel h3.title { margin-bottom: 10px; margin-top: 10px; border-bottom: 2px dotted #3f7bd9; font-size:14px; font-weight:bold; font-family : Calibri, Verdana, Ariel, sans-serif; height:25px;  }
+	.panel h4.title { margin-bottom: 10px; margin-top: 10px; border-bottom: 2px dotted #000; font-size:16px; font-weight:bold; font-family : Calibri, Verdana, Ariel, sans-serif; height:25px; }
+	
+	
+	
+	.panel h2.heading-title{ margin-bottom: 10px;margin-top: 10px; font-size:12pt; font-weight:bold;  font-family : Calibri, Verdana, Ariel, sans-serif; }
+	
+	.panel p {padding ; 0px;margin-bottom:10px;}
+	.panel .span-24 p {width: 900px;}
+	
+	.panel.desc-para{margin-bottom: 5px;font-size:8pt !important; font-family : Calibri, Verdana, Ariel, sans-serif;color:#52697E!important;}
+	.panel.desc-para ul{list-style:disc outside none; margin:10px !important; padding:10px !important; }
+	
+	noscript div { background: #ccc; border: 1px solid #000; margin: 20px 0; padding: 15px }
+	/*p {padding: 5px !important;}*/
+
+/* Most common stuff you'll need to change */
+
+	.coda-slider-wrapper { padding: 0 }
+	.coda-slider { background: #ffffff; border:1px solid blue;}
+	.coda-slider-second { background: #ffffff; border:0px solid blue;}
+	/*.coda-slider-second { background: #ffffff; border:1px solid blue;}*/
+	
+	/* Use this to keep the slider content contained in a box even when JavaScript is disabled */
+	.coda-slider-no-js .coda-slider { height: 200px; overflow: auto !important; padding-right: 20px }
+	.coda-slider-no-js .coda-slider-second { height: 200px; overflow: auto !important; padding-right: 20px }
+	/*.coda-slider-no-js .coda-slider-second { height: 200px; overflow: auto !important; padding-right: 20px }*/
+	
+	/* Change the width of the entire slider (without dynamic arrows) */
+	.coda-slider, .coda-slider .panel { width: 668px; height : 410px; font-size:10pt !important;color:#52697E!important; font-family : Calibri, Verdana, Ariel, sans-serif; } 
+	.coda-slider-second, .coda-slider-second .panel { width: 948px; height : 973px; font-size:10pt !important; color:#52697E!important; font-family : Calibri, Verdana, Ariel, sans-serif; overflow:auto;overflow-x:hidden;} 
+	
+	
+	/* Change margin and width of the slider (with dynamic arrows) */
+	.coda-slider-wrapper.arrows .coda-slider, .coda-slider-wrapper.arrows .coda-slider .panel { width: 600px }
+	.coda-slider-wrapper.arrows .coda-slider-second, .coda-slider-wrapper.arrows .coda-slider-second .panel { width: 948px }
+	.coda-slider-wrapper.arrows .coda-slider { margin: 0 10px }
+	.coda-slider-wrapper.arrows .coda-slider-second { margin: 0 10px }
+	
+	/* Arrow styling */
+	.coda-nav-left a, .coda-nav-right a { background: #3F7CD9; color: #fff; padding: 5px; width: 100px }
+	
+	/* Tab nav */
+	.coda-nav ul li a.current { background: #f7f7f7; color : red; }
+	.coda-nav-second ul li a.current { background: #f7f7f7; color : red; }
+	
+	
+	/* Panel padding */
+	.coda-slider .panel-wrapper { padding: 20px;border : 0px solid red; height : 370px; font-family : Calibri, Verdana, Ariel, sans-serif; overflow:auto; }
+	.coda-slider-second .panel-wrapper { padding: 0px;border : 0px solid red; height : 410px; font-family : Calibri, Verdana, Ariel, sans-serif; }
+	/*.coda-slider-second .panel-wrapper { padding: 20px;border : 0px solid red; height : 410px; font-family : Calibri, Verdana, Ariel, sans-serif; }*/
+	
+	/* Preloader */
+	.coda-slider p.loading { padding: 20px; text-align: center }
+	.coda-slider-second p.loading { padding: 20px; text-align: center }
+	/*.coda-slider-second p.loading { padding: 20px; text-align: center }*/
+
+/* Don't change anything below here unless you know what you're doing */
+
+	/* Tabbed nav */
+	.coda-nav ul { clear: both; display: block; margin: auto; overflow: hidden }
+	.coda-nav ul li { display: inline; border-bottom: 3px solid #fff }
+	.coda-nav ul li a { background: #3F7CD9; color: #fff; display: block; float: left; font-size: 12px; margin-right: 2px; padding: 3px 6px; text-decoration: none;  }
+	.coda-nav ul li a:hover {
+		color : red;
+	}
+	
+	
+	.coda-nav-second ul { clear: both; display: block; margin: auto; overflow: hidden }
+	.coda-nav-second ul li { display: inline; border-bottom: 3px solid #fff }
+	.coda-nav-second ul li a { background: #f7f7f7; color: #3F7CD9; display: block; float: left; font-size: 12px; margin-right: 2px; padding: 3px 6px; text-decoration: none;  }
+	.coda-nav-second ul li a:hover {
+		color : red;
+	}
+	
+	/* Miscellaneous */
+	.coda-slider-wrapper { clear: both; overflow: auto }
+	.coda-slider { float: left; overflow: hidden; position: relative }
+	.coda-slider .panel { display: block; float: left;font-size: 14px; color:#000; font-family : Calibri, Verdana, Ariel, sans-serif; }
+	.coda-slider .panel-container { position: relative; height : 410px; color:#000; font-size: 16px; font-family : Calibri, Verdana, Ariel, sans-serif; }
+	.coda-slider-second { float: left; overflow: hidden; position: relative }
+	.coda-slider-second .panel { display: block; float: left;font-size: 14px; color:#000; font-family : Calibri, Verdana, Ariel, sans-serif; }
+	.coda-slider-second .panel-container { position: relative; height : 410px; color:#000; font-size: 16px; font-family : Calibri, Verdana, Ariel, sans-serif; }
+	/*.coda-slider-second { float: left; overflow: hidden; position: relative }
+	.coda-slider-second .panel { display: block; float: left;font-size: 14px; color:#000; font-family : Calibri, Verdana, Ariel, sans-serif; }
+	.coda-slider .panel-container { position: relative; height : 410px; color:#000; font-size: 16px; font-family : Calibri, Verdana, Ariel, sans-serif; }*/
+	.coda-nav-left, .coda-nav-right { float: left }
+	.coda-nav-left a, .coda-nav-right a { display: block; text-align: center; text-decoration: none }
+	
